@@ -42,12 +42,4 @@ public class PublicController {
 				loginRequest.getPassword());
 		return new ResponseEntity<LoginResponse>(loginResponse, HttpStatus.OK);
 	}
-	
-	@PostMapping(value = "/registerAdmin", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<SuccessMessage> registerPatient(@RequestBody Map<String, String> list)
-			throws Exception {
-		publicService.registerAdmin(list.get("username"), list.get("password"));
-		return new ResponseEntity<SuccessMessage>(
-				new SuccessMessage("Patient Registration", "The Patient Registered Successfully"), HttpStatus.ACCEPTED);
-	}
 }

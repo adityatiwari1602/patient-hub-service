@@ -68,18 +68,5 @@ public class PublicService implements IPublicService {
 		User user = userRepository.findByUsername(username);
 		return new LoginResponse(jwt, user);
 	}
-	
 
-	@Override
-	public void registerAdmin(String username, String password) throws Exception {
-		User user = userRepository.findByUsername(username);
-		if (user != null) {
-			throw new UsernameAlreadyExistsException("Sign Up Exception"," Username Already exists in the System");
-		} else {
-			String salt = BCrypt.gensalt(10);
-			User newUser = new User(username, BCrypt.hashpw(password, salt),
-					"ROLE_ADMIN");
-			userRepository.save(newUser);
-		}
-	}
 }

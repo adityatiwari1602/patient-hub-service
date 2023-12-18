@@ -25,20 +25,6 @@ public class DiagnosticCenter implements Serializable {
 
 	@Column(name = "NAME", nullable = false)
 	private String name;
-
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (o == null || getClass() != o.getClass()) return false;
-		DiagnosticCenter that = (DiagnosticCenter) o;
-		return id == that.id && Objects.equals(name, that.name);
-	}
-
-	@Override
-	public int hashCode() {
-		return Objects.hash(id, name);
-	}
-
 	@Column(name = "CONTACT_NO", nullable = false)
 	private String contactNo;
 
