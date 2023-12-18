@@ -10,7 +10,6 @@ import com.patienthubservice.responses.SuccessMessage;
 import com.patienthubservice.service.IAdminService;
 import com.patienthubservice.service.IJwtUtil;
 import com.patienthubservice.service.IPatientService;
-import com.patienthubservice.service.PatientService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,6 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -34,7 +32,6 @@ import com.patienthubservice.entities.DiagnosticTest;
 
 @RestController
 @RequestMapping(path="/api/admin")
-@CrossOrigin(origins = "http://localhost:4200")
 public class AdminController {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(AdminController.class);

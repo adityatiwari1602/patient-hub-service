@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.patienthubservice.entities.TestResult;
+
 import com.patienthubservice.responses.SuccessMessage;
 import com.patienthubservice.service.IDiagnosticCenterService;
 import com.patienthubservice.service.IJwtUtil;
@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -26,7 +25,6 @@ import com.patienthubservice.requests.TestResultForm;
 
 @RestController
 @RequestMapping(path = "/api/center")
-@CrossOrigin(origins = "http://localhost:4200")
 public class DiagnosticCenterController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(DiagnosticCenterController.class);
