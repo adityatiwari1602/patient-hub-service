@@ -12,7 +12,7 @@
 	<groupId>com.patienthub</groupId>
 	<artifactId>patient-hub-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>health-care-master</name>
+	<name>Patient Hub Service</name>
 	<packaging>jar</packaging>
 	<description>Patient Hub Service</description>
 
