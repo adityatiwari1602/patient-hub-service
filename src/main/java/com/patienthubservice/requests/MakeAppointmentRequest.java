@@ -2,7 +2,7 @@ package com.patienthubservice.requests;
 
 import java.sql.Timestamp;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 import org.hibernate.annotations.ColumnDefault;
 

@@ -9,6 +9,6 @@ public interface IPublicService {
 
 	LoginResponse getAuthenticationToken(String username, String password) throws Exception;
 	
-	void registerAdmin(String username, String password) throws Exception;
+	//void registerAdmin(String username, String password) throws Exception;
 
 }

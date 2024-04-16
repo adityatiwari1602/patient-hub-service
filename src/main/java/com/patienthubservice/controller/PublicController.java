@@ -2,7 +2,7 @@ package com.patienthubservice.controller;
 
 import java.util.Map;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import com.patienthubservice.requests.LoginRequest;
 import com.patienthubservice.requests.PatientSignUpRequest;

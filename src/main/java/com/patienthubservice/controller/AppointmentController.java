@@ -2,7 +2,7 @@ package com.patienthubservice.controller;
 
 import java.util.Set;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import com.patienthubservice.entities.Appointment;
 import com.patienthubservice.entities.DiagnosticTest;
